@@ -14,6 +14,6 @@ After 4 concurrent runs, counts must be equal to 200 or 50 per run
 "200"
 
 # scripting [consistent and faster]
-get count:sc
+127.0.0.1:6379> get count:sc
 "200"
 ```
