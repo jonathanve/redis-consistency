@@ -5,6 +5,12 @@ venv:
 init:
 	pip install -r requirements.txt
 
+redis:
+	docker run -d \
+	--name redis \
+	-p 6379:6379 \
+	redis
+
 fire_forget:
 	python fire_forget.py
 
